@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 
 function Header() {
   return (
-    <div className="flex flex-row justify-between p-5 sticky z-10 top-0 bg-white dark:bg-black ">
+    <div className="flex items-center flex-row justify-between p-5 sticky z-10 top-0 bg-white dark:bg-black ">
       <Link href={"/"}>НаклейКаМеня</Link>
       <div className="flex flex-row gap-5">
         <Link href={"/"}>
