@@ -1,11 +1,11 @@
-import { Button } from "@/components/ui/button";
+import Hero from "@/components/Hero";
+import SecondHero from "@/components/SecondHero";
 
 export default function Home() {
   return (
-    <div>
-      <div className="flex">
-        <Button>123</Button>
-      </div>
+    <div className="flex flex-col">
+      <Hero />
+      <SecondHero />
     </div>
   );
 }
