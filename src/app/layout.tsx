@@ -4,8 +4,8 @@ import Header from "../components/Header";
 import { ThemeProvider } from "@/components/theme-provider";
 
 export const metadata: Metadata = {
-  title: "Stickers",
-  description: "НаклейКаМеня",
+  title: "Prikleika Store",
+  description: "ПриклейКаМеня",
 };
 
 export default function RootLayout({

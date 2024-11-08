@@ -47,21 +47,21 @@ function SecondHero() {
           }}
         >
           <CarouselContent>
-            <CarouselItem>
+            <CarouselItem className="flex flex-col justify-center items-center">
               <Image
                 className="rounded-3xl"
                 src={firstImage}
                 alt="Stickers image example"
               />
             </CarouselItem>
-            <CarouselItem>
+            <CarouselItem className="flex flex-col justify-center items-center">
               <Image
                 className="rounded-3xl"
                 src={secondImage}
                 alt="Stickers image example"
               />
             </CarouselItem>
-            <CarouselItem>
+            <CarouselItem className="flex flex-col justify-center items-center">
               <Image
                 className="rounded-3xl"
                 src={thirdImage}

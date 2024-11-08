@@ -16,7 +16,7 @@ export default function Home() {
         asChild
       >
         <Link
-          href={"https://www.wildberries.ru/brands/311578698-nakleykamenya"}
+          href={"https://www.wildberries.ru/brands/311663974-prikleyka-menya"}
         >
           Заказать
         </Link>

@@ -11,39 +11,56 @@ import { Avatar, AvatarFallback, AvatarImage } from "./ui/avatar";
 
 const reviews = [
   {
-    profileUrl: "https://github.com/shadcn.png",
+    profileUrl: "https://github.com/alex123.png",
     comment:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit.  Quia nobis soluta, dolorum illo nostrum explicabo ex pariatur quaerat, amet magni perferendis numquam laborumrepellendus, excepturi repellat suscipit? Natus, molestiae.Perferendis.",
+      "Эти стикеры просто потрясающие! Качество отличное, и они хорошо приклеиваются.",
     id: 1,
   },
   {
-    profileUrl: "https://github.com/shadcn.png",
+    profileUrl: "https://github.com/sarah_j.png",
     comment:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit.  Quia nobis soluta, dolorum illo nostrum explicabo ex pariatur quaerat, amet magni perferendis numquam laborumrepellendus, excepturi repellat suscipit? Natus, molestiae.Perferendis.",
+      "Обожаю эти милые дизайны! Идеально подходят для украшения моего ноутбука.",
     id: 2,
   },
   {
-    profileUrl: "https://github.com/shadcn.png",
+    profileUrl: "https://github.com/mike_dev.png",
     comment:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit.  Quia nobis soluta, dolorum illo nostrum explicabo ex pariatur quaerat, amet magni perferendis numquam laborumrepellendus, excepturi repellat suscipit? Natus, molestiae.Perferendis.",
+      "Цвета яркие и не выцветают даже после мытья моей бутылки для воды.",
     id: 3,
   },
   {
-    profileUrl: "https://github.com/shadcn.png",
+    profileUrl: "https://github.com/lisa_smith.png",
     comment:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit.  Quia nobis soluta, dolorum illo nostrum explicabo ex pariatur quaerat, amet magni perferendis numquam laborumrepellendus, excepturi repellat suscipit? Natus, molestiae.Perferendis.",
+      "Хорошее соотношение цены и качества, но некоторые стикеры оказались немного меньше, чем ожидалось.",
     id: 4,
   },
   {
-    profileUrl: "https://github.com/shadcn.png",
-    comment: "Привет как дела",
+    profileUrl: "https://github.com/tech_guru.png",
+    comment:
+      "Идеально подходят для программистов! Мой MacBook теперь выглядит потрясающе.",
     id: 5,
+  },
+  {
+    profileUrl: "https://github.com/artsy_emma.png",
+    comment: "Дизайны креативные, но клей мог бы быть посильнее.",
+    id: 6,
+  },
+  {
+    profileUrl: "https://github.com/sticker_fan.png",
+    comment:
+      "Быстрая доставка и отличное обслуживание клиентов. Буду заказывать ещё!",
+    id: 7,
+  },
+  {
+    profileUrl: "https://github.com/john_doe.png",
+    comment: "Хороший выбор в наборе, но пара стикеров пришла повреждённой.",
+    id: 8,
   },
 ];
 
 function SecondHero() {
   return (
-    <div className="flex gap-12 flex-col justify-center items-center w-full py-20">
+    <div className="flex gap-8 flex-col justify-center items-center w-3/4 h-1/2 py-20">
       <h3 className="text-5xl">Отзывы</h3>
       <Carousel
         className="w-3/4"
@@ -66,8 +83,8 @@ function SecondHero() {
                         <AvatarFallback>IC</AvatarFallback>
                       </Avatar>
                     </div>
-                    <div>
-                      <span className="text-xl font-semibold text-start">
+                    <div className="overflow-hidden">
+                      <span className="text-xl font-semibold text-start  break-words">
                         {review.comment}
                       </span>
                     </div>
