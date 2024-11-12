@@ -11,6 +11,7 @@ import {
 import shopImage from "../../public/50CB3513DCB21BC9.webp";
 import Link from "next/link";
 import wildberriesImage from "../../public/png-klev-club-dejs-p-wildberries-logotip-png-16.png";
+import { wbShopUrl } from "@/app/page";
 
 function Hero() {
   return (
@@ -48,12 +49,7 @@ function Hero() {
               <HoverCard>
                 <HoverCardTrigger>ПриклейКа Меня</HoverCardTrigger>
                 <HoverCardContent className="w-72 text-lg">
-                  <Link
-                    target="_blank"
-                    href={
-                      "https://www.wildberries.ru/brands/311663974-prikleyka-menya"
-                    }
-                  >
+                  <Link target="_blank" href={wbShopUrl}>
                     <div className="flex flex-row justify-between items-center">
                       <div className="flex flex-col justify-center items-center gap-2">
                         <Image

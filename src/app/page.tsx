@@ -3,6 +3,8 @@ import Reviews from "@/components/Reviews";
 import SecondHero from "@/components/SecondHero";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
+export const wbShopUrl =
+  "https://www.wildberries.ru/brands/311663974-prikleyka-menya";
 
 export default function Home() {
   return (
@@ -15,11 +17,7 @@ export default function Home() {
         variant={"outline"}
         asChild
       >
-        <Link
-          href={"https://www.wildberries.ru/brands/311663974-prikleyka-menya"}
-        >
-          Заказать
-        </Link>
+        <Link href={wbShopUrl}>Заказать</Link>
       </Button>
     </div>
   );
