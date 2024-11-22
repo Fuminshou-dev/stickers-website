@@ -1,0 +1,25 @@
+name: Deploy to VPS
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy to VPS
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.VPS_HOST }}
+          username: ${{ secrets.VPS_USERNAME }}
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          port: 22
+          script: |
+            cd /dev/stickers-website
+            cp .env .env.backup || true
+            git pull origin main
+            cp .env.backup .env || true
+            pnpm ci --production
+            pnpm run build
+            pm2 reload stickers --update-env
