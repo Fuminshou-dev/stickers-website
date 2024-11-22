@@ -17,7 +17,7 @@ jobs:
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           port: 22
           script: |
-            cd /dev/stickers-website
+            cd dev/stickers-website
             cp .env .env.backup || true
             eval $(ssh-agent -s)
             echo "${{ secrets.GH_DEPLOY_KEY }}" | ssh-add -
