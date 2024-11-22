@@ -17,10 +17,12 @@ jobs:
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           port: 22
           script: |
-            cd ~/dev/stickers-website
-            cp .env .env.backup || true  # Fixed syntax
+            cd /dev/stickers-website
+            cp .env .env.backup || true
+            eval $(ssh-agent -s)
+            echo "${{ secrets.GH_DEPLOY_KEY }}" | ssh-add -
             git pull origin master
-            cp .env.backup .env || true  # Fixed syntax
-            pnpm ci --production
+            cp .env.backup .env || true
+            pnpm install --frozen-lockfile
             pnpm run build
             pm2 reload stickers --update-env
