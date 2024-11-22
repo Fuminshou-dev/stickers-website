@@ -1,3 +1,4 @@
+
 name: Deploy to VPS
 on:
   push:
@@ -16,10 +17,10 @@ jobs:
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           port: 22
           script: |
-            cd /dev/stickers-website
-            cp .env .env.backup || true
-            git pull origin main
-            cp .env.backup .env || true
+            cd ~/dev/stickers-website
+            cp .env .env.backup || true  # Fixed syntax
+            git pull origin master
+            cp .env.backup .env || true  # Fixed syntax
             pnpm ci --production
             pnpm run build
             pm2 reload stickers --update-env
