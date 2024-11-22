@@ -57,7 +57,7 @@ function AboutUs() {
   return (
     <div className="flex flex-col justify-center items-center p-12">
       <div className="flex flex-col justify-center items-center gap-6">
-        <Image width={800} src={shopImage} alt="123" />
+        <Image width={600} src={shopImage} alt="123" />
         <h1 className="text-5xl">
           Магазин{" "}
           <span className="bg-gradient-to-r from-blue-600 via-green-500 to-indigo-400 inline-block text-transparent bg-clip-text">
