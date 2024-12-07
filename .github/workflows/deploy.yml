@@ -18,11 +18,9 @@ jobs:
           port: 22
           script: |
             cd dev/stickers-website
-            cp .env .env.backup || true
             eval $(ssh-agent -s)
             echo "${{ secrets.GH_DEPLOY_KEY }}" | ssh-add -
             git pull origin master
-            cp .env.backup .env || true
             pnpm install --frozen-lockfile
             pnpm run build
-            pm2 reload stickers --update-env
+            pm2 reload stickers
