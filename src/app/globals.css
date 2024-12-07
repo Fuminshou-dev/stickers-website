@@ -81,3 +81,9 @@ body {
     @apply bg-background text-foreground;
   }
 }
+
+.bg-full {
+  position: absolute;
+  left: 0;
+  width: 100%;
+}

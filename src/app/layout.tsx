@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import Header from "../components/Header";
 import { ThemeProvider } from "@/components/theme-provider";
 import { ConvexClientProvider } from "@/components/ConvexClientProvider";
+import Header from "@/components/Header";
 
 export const metadata: Metadata = {
   title: "Prikleika Store",
@@ -16,7 +16,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning className="no-scrollbar">
-      <body className={`antialiased`}>
+      <body className="h-screen">
         <ConvexClientProvider>
           <ThemeProvider>
             <Header />
