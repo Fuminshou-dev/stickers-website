@@ -5,8 +5,6 @@ import GallerySection from "@/components/Gallery";
 import Hero from "@/components/Hero";
 import OrderSection from "@/components/OrderSection";
 import ReviewsSection from "@/components/Reviews";
-export const wbShopUrl =
-  "https://www.wildberries.ru/brands/311663974-prikleyka-menya";
 
 export default function Home() {
   return (

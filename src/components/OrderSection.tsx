@@ -1,4 +1,3 @@
-import { wbShopUrl } from "@/app/page";
 import Link from "next/link";
 import React from "react";
 import { Button } from "./ui/button";
@@ -6,6 +5,7 @@ import { Button } from "./ui/button";
 import arrowImage from "@/public/iconmonstr-arrow-right-thin-240.png";
 
 import Image from "next/image";
+import { wbShopUrl } from "@/lib/constants";
 
 export default function OrderSection() {
   return (

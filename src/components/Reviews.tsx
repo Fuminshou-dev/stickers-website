@@ -9,7 +9,8 @@ import {
   CarouselPrevious,
 } from "./ui/carousel";
 import { Card, CardContent } from "./ui/card";
-import { Avatar, AvatarFallback, AvatarImage } from "./ui/avatar";
+import { Avatar } from "./ui/avatar";
+// import { AvatarFallback, AvatarImage} from './ui/avatar'
 import { Skeleton } from "./ui/skeleton";
 
 const Reviews = [
