@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
-import { ConvexClientProvider } from "@/components/ConvexClientProvider";
 import Header from "@/components/Header";
 
 export const metadata: Metadata = {
@@ -17,12 +16,10 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning className="no-scrollbar">
       <body className="h-screen">
-        <ConvexClientProvider>
-          <ThemeProvider>
-            <Header />
-            {children}
-          </ThemeProvider>
-        </ConvexClientProvider>
+        <ThemeProvider>
+          <Header />
+          {children}
+        </ThemeProvider>
       </body>
     </html>
   );
