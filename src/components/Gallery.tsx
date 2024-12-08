@@ -11,7 +11,7 @@ export default function GallerySection() {
     <section id="gallery" className="w-full border-y py-12">
       <div className="container mx-auto flex justify-center items-center flex-col">
         <h3 className="text-3xl md:text-5xl p-2 relative inline-flex flex-col items-center text-center mb-8">
-          Галлерея
+          Галерея
           <span className="w-1/2 h-0.5 bg-black dark:bg-white mt-2"></span>
           <span className="text-sm font-semibold">(в разработке)</span>
         </h3>
