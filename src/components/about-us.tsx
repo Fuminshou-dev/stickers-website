@@ -13,7 +13,7 @@ export default function AboutUsSection() {
               width={800}
               src={shopImage}
               alt="About Us Image"
-              className="w-full h-auto max-w-md rounded-lg shadow-md"
+              className="w-full h-auto max-w-md select-none rounded-lg shadow-md"
             />
           </div>
           <div className="flex flex-col justify-center space-y-6">

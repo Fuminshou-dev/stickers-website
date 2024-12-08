@@ -20,7 +20,12 @@ function Features() {
         <div className="flex flex-col md:flex-row md:p-8 gap-8">
           <div className="flex flex-col items-center gap-4 w-full md:w-1/3">
             <span className="bg-blue-400 p-12 md:p-16 rounded-full flex justify-center items-center">
-              <Image src={layersIcon} width={imageWidth} alt="Feature Image" />
+              <Image
+                className="select-none"
+                src={layersIcon}
+                width={imageWidth}
+                alt="Feature Image"
+              />
             </span>
             <p className="text-lg font-semibold md:text-2xl lg:text-3xl text-transparent bg-clip-text bg-gradient-to-b from-blue-500 to-purple-500">
               Яркий дизайн
@@ -33,6 +38,7 @@ function Features() {
           <div className="flex flex-col items-center gap-4 w-full md:w-1/3">
             <span className="bg-blue-400 p-12 md:p-16 rounded-full flex justify-center items-center">
               <Image
+                className="select-none"
                 src={checkboxIcon}
                 width={imageWidth}
                 alt="Feature Image"
@@ -48,7 +54,12 @@ function Features() {
           </div>
           <div className="flex flex-col items-center gap-4 w-full md:w-1/3">
             <span className="bg-blue-400 p-12 md:p-16 rounded-full flex justify-center items-center">
-              <Image src={powderIcon} width={imageWidth} alt="Feature Image" />
+              <Image
+                className="select-none"
+                src={powderIcon}
+                width={imageWidth}
+                alt="Feature Image"
+              />
             </span>
             <p className="text-lg font-semibold md:text-2xl lg:text-3xl text-transparent bg-clip-text bg-gradient-to-b from-blue-500 to-purple-500">
               Не оставляют следов
