@@ -5,6 +5,7 @@ import { Button } from "./ui/button";
 import Image from "next/image";
 
 import arrowImage from "@/public/iconmonstr-arrow-right-thin-240.png";
+import Link from "next/link";
 
 function Hero() {
   return (
@@ -25,11 +26,12 @@ function Hero() {
           Лучшие стикеры.
         </p>
         <Button
+          asChild
           variant={"outline"}
           size={"lg"}
           className="rounded-full mt-4   bg-gradient-to-b from-blue-500 to-purple-500"
         >
-          Узнать больше
+          <Link href={"#features"}>Узнать больше</Link>
         </Button>
         <Image
           className="dark:invert rotate-90 select-none opacity-50"
