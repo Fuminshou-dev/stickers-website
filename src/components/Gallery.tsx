@@ -1,14 +1,15 @@
 "use client";
 import React, { useState } from "react";
-import { Skeleton } from "./ui/skeleton";
+import { SkeletonMotion } from "./ui/skeleton-motion";
 import { Button } from "./ui/button";
+import { Section } from "./Section";
 
 export default function GallerySection() {
   const [showAll, setShowAll] = useState(false);
   const skeletons = Array(12).fill(null);
 
   return (
-    <section id="gallery" className="w-full border-y py-12">
+    <Section id="gallery" className="w-full border-y py-12">
       <div className="container mx-auto flex justify-center items-center flex-col">
         <h3 className="text-3xl md:text-5xl p-2 relative inline-flex flex-col items-center text-center mb-8">
           Галерея
@@ -17,10 +18,12 @@ export default function GallerySection() {
         </h3>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
           {skeletons.map((_, index) => (
-            <Skeleton
+            <SkeletonMotion
               key={index}
-              className={`size-72 ${index >= 2 && !showAll ? "hidden sm:block" : ""}`}
-            />
+              className={`size-72 ${
+                index >= 2 && !showAll ? "hidden sm:block" : ""
+              }`}
+            ></SkeletonMotion>
           ))}
         </div>
         {skeletons.length > 2 && (
@@ -33,6 +36,6 @@ export default function GallerySection() {
           </Button>
         )}
       </div>
-    </section>
+    </Section>
   );
 }

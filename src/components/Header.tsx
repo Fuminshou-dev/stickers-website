@@ -12,7 +12,12 @@ function Header() {
     <header className="sticky w-full top-0 backdrop-blur-lg z-100 border-b">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
-          <Link href={"/"} className="text-lg font-semibold">
+          <Link
+            href={"/"}
+            className="text-lg font-semibold bg-gradient-to-r bg-clip-text  text-transparent 
+            from-blue-500 via-purple-500 to-indigo-500
+            animate-text"
+          >
             ПриклейКаМеня
           </Link>
           <div className="hidden md:flex md:items-center md:space-x-4">

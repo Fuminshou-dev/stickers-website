@@ -6,12 +6,13 @@ import React from "react";
 import checkboxIcon from "@/public/checkbox.png";
 import powderIcon from "@/public/powder.png";
 import layersIcon from "@/public/layers.png";
+import { Section } from "./Section";
 
 const imageWidth = 48;
 
 function Features() {
   return (
-    <section id="features" className="w-full border-y py-12">
+    <Section id="features" className="w-full border-y py-12">
       <div className="flex flex-col justify-center items-center container mx-auto">
         <h3 className="text-3xl md:text-5xl p-2 relative inline-flex flex-col items-center text-center mb-8">
           Преимущества
@@ -71,7 +72,7 @@ function Features() {
           </div>
         </div>
       </div>
-    </section>
+    </Section>
   );
 }
 

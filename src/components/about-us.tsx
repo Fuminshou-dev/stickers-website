@@ -2,10 +2,11 @@ import Image from "next/image";
 import React from "react";
 
 import shopImage from "@/public/shopLogo.jpg";
+import { Section } from "./Section";
 
 export default function AboutUsSection() {
   return (
-    <section id="about-us" className="w-full py-5 md:py-12 border-y">
+    <Section id="about-us" className="w-full py-5 md:py-12 border-y">
       <div className="container mx-auto px-4 md:px-6 lg:px-8">
         <div className="grid grid-cols-1 justify-center items-center md:grid-cols-2 gap-8 md:gap-16">
           <div className="justify-center items-center hidden md:flex">
@@ -45,6 +46,6 @@ export default function AboutUsSection() {
           </div>
         </div>
       </div>
-    </section>
+    </Section>
   );
 }

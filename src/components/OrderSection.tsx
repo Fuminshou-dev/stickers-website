@@ -6,10 +6,11 @@ import arrowImage from "@/public/iconmonstr-arrow-right-thin-240.png";
 
 import Image from "next/image";
 import { wbShopUrl } from "@/lib/constants";
+import { Section } from "./Section";
 
 export default function OrderSection() {
   return (
-    <section id="order" className="w-full border-b py-12">
+    <Section id="order" className="w-full border-b py-12">
       <div className="flex flex-col gap-4 justify-center items-center container mx-auto">
         <div className="flex flex-col gap-0 justify-center items-center">
           <h3 className="text-2xl">Понравилось? Заказывай.</h3>
@@ -28,6 +29,6 @@ export default function OrderSection() {
           <Link href={wbShopUrl}>Заказать</Link>
         </Button>
       </div>
-    </section>
+    </Section>
   );
 }
