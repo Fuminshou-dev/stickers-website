@@ -97,7 +97,7 @@ function ReviewsSection() {
   return (
     <Section id="reviews" className="w-full border-y">
       <div className="flex gap-4 h-full sm:gap-6 md:gap-12 lg:gap-16 flex-col justify-center items-center py-10">
-        <h3 className="text-3xl font-bold sm:text-4xl md:text-5xl">Отзывы</h3>
+        <h2 className="text-3xl font-bold sm:text-4xl md:text-5xl">Отзывы</h2>
         <Carousel
           className="w-2/3 sm:w-11/12 md:w-5/6 lg:w-3/4"
           opts={{

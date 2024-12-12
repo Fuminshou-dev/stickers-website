@@ -11,11 +11,11 @@ export default function GallerySection() {
   return (
     <Section id="gallery" className="w-full border-y py-12">
       <div className="container mx-auto flex justify-center items-center flex-col">
-        <h3 className="text-3xl md:text-5xl p-2 relative inline-flex flex-col items-center text-center mb-8">
+        <h2 className="text-3xl md:text-5xl p-2 relative inline-flex flex-col items-center text-center mb-8">
           Галерея
           <span className="w-1/2 h-0.5 bg-black dark:bg-white mt-2"></span>
           <span className="text-sm font-semibold">(в разработке)</span>
-        </h3>
+        </h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
           {skeletons.map((_, index) => (
             <SkeletonMotion

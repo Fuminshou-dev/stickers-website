@@ -19,19 +19,19 @@ export default function AboutUsSection() {
           </div>
           <div className="flex flex-col justify-center space-y-6">
             <div className="flex flex-col justify-center items-center md:justify-normal md:items-start">
-              <h1 className="text-3xl md:text-4xl mb-4 font-bold">
+              <h2 className="text-3xl md:text-4xl mb-4 font-bold">
                 О нас
                 <span className="block w-full md:w-1/4  h-1 bg-black dark:bg-white mt-2"></span>
-              </h1>
+              </h2>
               <p className="text-lg md:text-xl mb-6">
                 Мы делаем и продаем прикольные стикеры самых разных тематик. Все
                 стикеры высокого качества.
               </p>
             </div>
             <div className="flex flex-col justify-center items-center md:items-start">
-              <h2 className="text-2xl md:text-3xl mb-4 font-bold">
+              <h3 className="text-2xl md:text-3xl mb-4 font-bold">
                 Почему именно мы?
-              </h2>
+              </h3>
               <ul className="list-disc list-inside flex flex-col  gap-2 md:gap-0 md:grid md:grid-cols-2">
                 <li>Продаем стикеры самых разных тематик</li>
                 <li>Высокое качество продукции</li>

@@ -13,7 +13,7 @@ export default function OrderSection() {
     <Section id="order" className="w-full border-b py-12">
       <div className="flex flex-col gap-4 justify-center items-center container mx-auto">
         <div className="flex flex-col gap-0 justify-center items-center">
-          <h3 className="text-2xl">Понравилось? Заказывай.</h3>
+          <h2 className="text-2xl">Понравилось? Заказывай.</h2>
           <Image
             className="dark:invert rotate-90 select-none	"
             src={arrowImage}

@@ -14,10 +14,10 @@ function Features() {
   return (
     <Section id="features" className="w-full border-y py-12">
       <div className="flex flex-col justify-center items-center container mx-auto">
-        <h3 className="text-3xl md:text-5xl p-2 relative inline-flex flex-col items-center text-center mb-8">
+        <h2 className="text-3xl md:text-5xl p-2 relative inline-flex flex-col items-center text-center mb-8">
           Преимущества
           <span className="w-1/2 h-0.5 bg-black dark:bg-white mt-2"></span>
-        </h3>
+        </h2>
         <div className="flex flex-col md:flex-row md:p-8 gap-8">
           <div className="flex flex-col items-center gap-4 w-full md:w-1/3">
             <span className="bg-blue-400 p-12 md:p-16 rounded-full flex justify-center items-center">
