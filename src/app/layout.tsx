@@ -7,7 +7,7 @@ import { GoogleAnalytics } from "@next/third-parties/google";
 export const metadata: Metadata = {
   title: "Магазин ПриклейКаМеня",
   description:
-    "Магазин стикеров ПриклейКаМеня. Различные стикеры на любой вккус и цвет.",
+    "Магазин стикеров ПриклейКаМеня. Различные стикеры на любой вкус и цвет.",
   keywords: [
     "stickers",
     "стикеры",
@@ -56,6 +56,23 @@ export const metadata: Metadata = {
     "sticker customization",
     "кастомизация стикеров",
   ],
+  openGraph: {
+    type: "website",
+    url: "https://prikleika.store/",
+    title: "Магазин ПриклейКаМеня",
+    description:
+      "Магазин стикеров ПриклейКаМеня. Различные стикеры на любой вкус и цвет.",
+    images: [
+      {
+        url: "https://prikleika-menya.ru/public/shopLogo.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Логотип Магазина ПриклейКа Меня",
+      },
+    ],
+    locale: "ru_RU",
+    siteName: "Магазин ПриклейКа Меня",
+  },
 };
 
 export default function RootLayout({
@@ -64,7 +81,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning className="scroll-smooth">
+    <html lang="ru" suppressHydrationWarning className="scroll-smooth">
       <body className="h-screen">
         <ThemeProvider>
           <Header />
