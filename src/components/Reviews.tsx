@@ -95,7 +95,7 @@ const RatingStars = (rating: number) => {
 
 function ReviewsSection() {
   return (
-    <Section id="reviews" className="w-full border-y">
+    <Section id="reviews" className="w-full border-y select-none">
       <div className="flex gap-4 h-full sm:gap-6 md:gap-12 lg:gap-16 flex-col justify-center items-center py-10">
         <h2 className="text-3xl font-bold sm:text-4xl md:text-5xl">Отзывы</h2>
         <Carousel
